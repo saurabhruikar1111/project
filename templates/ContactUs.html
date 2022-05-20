@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get connected with us</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/ContactUs.css')}}">
+</head>
+<body>
+    <div id="navsecid">
+        <nav id="navbar">
+            <div id="logo">
+               <a href="/ContactUs"><img src="../static/images/logo/bull.png" alt="MyStockComparator.com"></a> 
+            </div>
+            <ul class="push">
+                <li class="item"><a href="/">Home</a></li>
+                <li class="item"><a href="/Comparator">Comparator</a></li>
+                <li class="item"><a href="/AboutUs">About Us</a></li>
+                <li class="item"><a href="/ContactUs">Contact Us</a></li>
+                <li class="item"><a href="/SignUp">Sign Up</a></li>
+            </ul>
+        </nav>
+
+    <div>
+    <section>
+        <div class="container">
+            <div class="contactInfo">
+                <div>
+                    <h2>Contact Info</h2>
+                    <ul class="info">
+                        <li>
+                            <span><img src="/images/logo/location.png" alt=""></span>
+                            <span>2912 Meadowbrook Road <br>Los Angeles,CA <br>90017</span>
+                        </li>
+                        <li>
+                            <span><img src="/images/logo/mail.png" alt=""></span>
+                            <span>loremipsum.com</span>
+                        </li>
+                        <li>
+                            <span><img src="/images/logo/call.png" alt=""></span>
+                            <span>310-286-1623</span>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="sci">
+                    <li><a href="#"><img src="../static/images/logo/1.png" alt=""></a></li>
+                    <li><a href="#"><img src="../static/images/logo/2.png" alt=""></a></li>
+                    <li><a href="#"><img src="../static/images/logo/3.png" alt=""></a></li>
+                    <li><a href="#"><img src="../static/images/logo/4.png" alt=""></a></li>
+                    <li><a href="#"><img src="../static/images/logo/5.png" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="contactForm">
+            <h2>Send a message</h2>
+            <div class="formBox">
+                <div class="inputBox w50">
+                    <input type="text" required>
+                    <span>First Name</span>
+                </div>
+                <div class="inputBox w50">
+                    <input type="text" required>
+                    <span>Last Name</span>
+                </div>
+                <div class="inputBox w50">
+                    <input type="email" required>
+                    <span>Email Address</span>
+                </div>
+                <div class="inputBox w50">
+                    <input type="number" required>
+                    <span>Mobile Number</span>
+                </div>
+                <div class="inputBox w100">
+                   <textarea required></textarea> 
+                    <span>Write your message here...</span>
+                </div>
+                <div class="inputBox w100">
+                    <input type="submit" value="send">
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+</body>
+</html>

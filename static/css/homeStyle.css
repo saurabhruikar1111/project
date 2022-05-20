@@ -1,0 +1,144 @@
+/* css reset */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: cursive;
+}
+
+/* navigation bar  */
+#navbar {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    top: 0px;
+
+}
+
+#navbar .push {
+    margin-left: auto;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0;
+
+}
+
+/* navigation bar logo and image */
+
+#logo {
+    margin: 0px 3px;
+
+}
+
+#logo img {
+    /* border-radius: 25px; */
+    margin: 4px 10px;
+    height: 49px;
+    width: 72px;
+}
+
+/* list styling */
+
+
+
+#navbar ul {
+    display: flex;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+
+}
+
+
+#navbar ul li {
+    list-style-type: none;
+    font-size: 1rem;
+
+}
+
+#navbar ul li a {
+    color:black;
+    display: block;
+    padding: 3px 25px;
+    border-radius: 45px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: white;
+    background-color:black;
+}
+
+/* home section  */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 200px;
+    height: 525px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    background-image: url(../images/background/hb.jpg);
+    background-repeat: no-repeat;
+    background-size: 1292px 660px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+
+#home h1 {
+    color: black;
+    text-align: center;
+    /* font-family: 'Bree Serif', serif; */
+}
+
+#home p {
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    /* font-family: 'Bree Serif', serif; */
+}
+
+
+/* utility function  */
+.h-primary{
+    font-size: 3rem;
+    padding: 0px;
+    /* font-family: 'Bree Serif', serif; */
+} 
+
+.center{
+    text-align: center;
+}
+
+
+.btn {
+    padding: 6px 10px;
+    border: 2px solid black;
+    background-color: #57bdfd;
+    color: black;
+    margin: 17px;
+    font-size: larger;
+    border-radius: 8px;
+    cursor: pointer;
+}
+ 
+.btn:hover{  
+
+    background-color: #f621c8;
+
+}

@@ -1,0 +1,129 @@
+
+{% for msg in get_flashed_messages() %}
+<article class="message is-danger" >
+  <div class="message-header">
+    <p>{{msg}}</p>
+    <button class="delete" aria-label="delete"></button>
+    <script>  
+    func=()=>{
+      const div = document.querySelector('.message')
+      div.remove()
+    }
+    const btn = document.querySelector('.delete')
+    const div=document.querySelector('.message')
+    btn.addEventListener('click',func)
+    setTimeout(func,3000)
+    </script>
+  </div>
+  </article>
+{% endfor%}
+<!DOCTYPE html>
+<html lang="en"  id="html">
+
+<head >
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body >
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css" />
+  <!-- <link rel="stylesheet" href="style.css" /> -->
+  <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}" />
+
+  <!-- <nav class="navbar has-shadow is-white "> -->
+  <!-- logo -->
+  <!-- <div class="navbar-brand">
+       <a class="navbar-item"> -->
+  <!-- <img src="{{url_for('static',filename='logo/bull.png')}}" alt="stock logo" max-width="70%"> -->
+  <!-- <img src="../static/images/logo/bull.png" alt="MyStockComparator.com" height="49px" width="72px">
+       </a>
+     </div>
+     <div class="navbar-menu" id="nav-links">
+       <div class="navbar-end">
+         <a href="/" class="navbar-item">Home</a>
+         <a href="/Comparator" class="navbar-item">Comparator</a>
+         <a href="/AboutUs" class="navbar-item">AboutUs</a>
+         <a href="/ContactUs" class="navbar-item">ContactUs</a>
+         <a href="#" class="navbar-item">SignIn</a>
+       </div>
+     </div>
+   </nav> -->
+
+  <nav id="navbar">
+    <div id="logo">
+      <a href="/Comparator"><img src="../static/images/logo/bull.png" alt="MyStockComparator.com"></a>
+    </div>
+    <ul class="push">
+      <li class="item"><a href="/">Home</a></li>
+      <li class="item"><a href="/Comparator">Comparator</a></li>
+      <li class="item"><a href="/AboutUs">About Us</a></li>
+      <li class="item"><a href="/ContactUs">Contact Us</a></li>
+      <li class="item"><a href="/SignUp">Sign Up</a></li>
+    </ul>
+  </nav>
+
+  <!-- <h1 style="margin: 0px;">STOCK COMPARATOR</h1> -->
+  <div class="maincontainer">
+    <div id="maincontainerid">COMPARATOR</div>
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <div class="stockid">
+            <p><strong>Stock I</strong></p>
+          </div>
+          <div id="left-autocomplete"></div>
+          <div id="left-summary" class="summary"></div>
+        </div>
+        <div class="column">
+          <div class="stockid">
+            <p><strong>Stock II</strong></p>
+          </div>
+          <div id="right-autocomplete"></div>
+          <div id="right-summary" class="summary"></div>
+        </div>
+      </div>
+      <div class="column is-half notification is-dark is-outlined tutorial">
+        <h1 class="title">Search For a Stock on Both Sides</h1>
+        <p class="subtitle">We will tell you which is best!</p>
+      </div>
+      <!-- class="is-hidden" -->
+      <div id="btnDivId" class="has-text-centered is-hidden">
+        <button class=" button is-medium is-dark is-outlined " id="btn">Comp</button>
+        <button class=" button is-medium is-dark is-outlined " id="btn2">Clear!</button>
+      </div>
+
+    </div>
+    <div class="btns is-hidden ">
+    <!-- <label for="no">Choose a no:</label> -->
+    <select name="ratios" id="ratio"   >
+          <option " value="selection">choose the ratio</option>
+          <option value="returnOnEquity">returnOnEquity</option>
+          <option value="targetHighPrice">targetHighPrice</option>
+          <option value="priceToBook">priceToBook</option>
+          <option value="totalCashPerShare">totalCashPerShare</option>
+          <option value="bookValue">bookValue</option>
+      </select>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <!-- <script src="utils.js"  ></script> -->
+  <script src="  {{url_for('static',filename='script/utils.js')}} "></script>
+  <!-- <script src="autocomplete.js"  ></script> -->
+  <script src="  {{url_for('static',filename='script/autocomplete.js')}} "></script>
+  <!-- <script src="index.js"  ></script> -->
+  <script src="  {{url_for('static',filename='script/index.js')}} "></script>
+</body>
+
+</html>

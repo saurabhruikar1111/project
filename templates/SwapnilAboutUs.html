@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- here we are write css code or style -->
+    <style>
+      body {
+        font-family: cursive;
+        margin: 0;
+      }
+
+      html {
+        box-sizing: border-box;
+      }
+
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+
+      .column {
+        float: left;
+        width: 33.3%;
+        margin-bottom: 16px;
+        padding: 0 8px;
+      
+      }
+
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(72, 77, 80, 0.833);
+        margin: 8px;
+      }
+
+      .about-section {
+        padding: 50px;
+        text-align: center;
+        background-color: #313176b6;
+        color: white;
+      }
+
+      .container {
+        padding: 0 16px;
+      }
+
+      .container::after,
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      
+      .title {
+        color: grey;
+      }
+
+      .button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: rgb(34, 30, 30);
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        
+      }
+      
+      .button:hover {
+        background-color: rgb(18, 177, 63);
+      }
+      
+      @media screen and (max-width: 650px) {
+        .column {
+          width: 100%;
+          display: block;
+        }
+      }
+      /* siddhant css change */
+     .row .column .card img{
+       width: 100%;
+       height: 442px;
+     }
+     /* css reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* navigation bar  */
+#navbar {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    top: 0px;
+    position: sticky;
+    background-color:white;
+}
+
+#navbar .push {
+    margin-left: auto;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0;
+
+}
+
+/* navigation bar logo and image */
+
+#logo {
+    margin: 0px 3px;
+
+}
+
+#logo img {
+    /* border-radius: 25px; */
+    margin: 4px 10px;
+    height: 49px;
+    width: 72px;
+}
+
+/* list styling */
+
+
+
+#navbar ul {
+    display: flex;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+
+}
+
+
+#navbar ul li {
+    list-style-type: none;
+    font-size: 1rem;
+
+}
+
+#navbar ul li a {
+    color:black;
+    display: block;
+    padding: 3px 25px;
+    border-radius: 45px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: white;
+    background-color:black;
+}
+
+      
+      </style>
+    <!-- css code end  -->
+  </head>
+  <body> 
+    <nav id="navbar">
+    <div id="logo">
+       <a href="/AboutUs"><img src="../static/images/logo/bull.png" alt="MyStockComparator.com"></a> 
+    </div>
+    <ul class="push">
+        <li class="item"><a href="/">Home</a></li>
+        <li class="item"><a href="/Comparator">Comparator</a></li>
+        <li class="item"><a href="/AboutUs">About Us</a></li>
+        <li class="item"><a href="/ContactUs">Contact Us</a></li>
+        <li class="item"><a href="/SignUp">Sign Up</a></li>
+    </ul>
+</nav>
+    <div class="about-section">
+     
+      <h1>About Us Page</h1>
+      <!-- write here  -->
+      <p>
+        Stock comparison is a tool that allows you to compare key performance
+        indicators of stocks or funds, such as profitability and riskiness.
+      </p>
+      <hr />
+      <p>
+        Top Stock Analysis Software StockRover. Best Overall. MetaStock. Best
+        Runner-up. TC2000. Best Free Software. Scanz. Best for Day Traders.
+        TrendSpider. Best for Advanced Charting Systems. TradingView. Best
+        Premium Software. NinjaTrader. Best for Automation.
+      </p>
+    </div>
+
+    <h2 style="text-align: center">Our Team</h2>
+    <div class="row">
+      <!-- coloum 1 -->
+      <div class="column">
+        <div class="card">
+          <!-- insert image url here -->
+          <img src="../static/images/photos/realSwapnil.jpg" alt="swapnil" style="width: 100%"  />
+          <div class="container">
+            <h2>Swapnil Thorat</h2>
+            <p class="title">Founder</p>
+            <p>
+              Hi I Am Swapnil !<br />
+              I am Working on Website Layout And Its Design Using HTML and CSS.
+            </p>
+            <p>swwapnilthorat@gmail.com</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+      <!-- coloum 2 -->
+      <div class="column">
+        <div class="card">
+          <img src="../static/images/photos/saurabhpic.jpg" alt="Saurabh Ruikar" style="width: 100%" />
+          <div class="container">
+            <h2>Saurabh Ruikar</h2>
+            <p class="title">Director</p>
+            <p>
+              Hi I Am Saurabh Ruikar !<br />
+              I am Working On Backend Technology In This Project Using Python As
+              A Backend Language
+            </p>
+            <p>saurabh@gmail.com</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+      <!-- coloum 3 -->
+      <div class="column">
+        <div class="card">
+          <img src="../static/images/photos/sidd.jpg" alt="Saurabh" style="width: 100%" />
+          <div class="container">
+            <h2>Siddhant Gambhir</h2>
+            <p class="title">Noob(Beginner) developer</p>
+            <p>Hi I Am Siddhant Gambhir !<br />
+              I am Working On Front-End as well as Backend Technology .
+            </p>
+            <p>Siddhantgambhir27@gmail.com</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
