@@ -74,7 +74,7 @@ figure .image img {
 .stockid {
   text-align: center;
   font-size: 25px;
-  font-family: sans-serif;
+  /* font-family: sans-serif; */
   margin-top: 10px;
 }
 
@@ -134,13 +134,13 @@ figure .image img {
 }
 .button{
   border-radius: 5px;
-  font-family: cursive;
+  /* font-family: cursive; */
 }
 /* navbar css by sidd  */
 * {
   margin: 0px;
   padding: 0px;
-  font-family: cursive;
+  /* font-family: cursive; */
   /* background: url(../images/background/comparatorbg.jpg) ;
   background-repeat: no-repeat;
   background-size: 1292px 660px; */
@@ -194,7 +194,7 @@ figure .image img {
 
 #navbar ul {
   display: flex;
-  font-family: 'Baloo Bhaijaan 2', cursive;
+  /* font-family: 'Baloo Bhaijaan 2', cursive; */
   
   
 }
@@ -231,7 +231,7 @@ figure .image img {
   position: absolute;
   right: 12px;
   top:55px;
-  font-style: oblique;
+  /* font-style: oblique; */
   
 }
 

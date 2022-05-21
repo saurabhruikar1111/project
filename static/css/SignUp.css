@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: cursive;
+  /* font-family: cursive; */
 }
 body{
   
@@ -267,7 +267,7 @@ body{
 
 #navbar ul {
   display: flex;
-  font-family: 'Baloo Bhaijaan 2', cursive;
+  /* font-family: 'Baloo Bhaijaan 2', cursive; */
 
 }
 

@@ -55,7 +55,7 @@ def home():
             info[entry[0]] = entry[1]
         return jsonify(info)
 
-    # print(data)
+    
     return jsonify({})
 
 
@@ -137,6 +137,4 @@ def signUp():
 if __name__=='__main__':
     app.run(port=5000, debug=True)
 
-# host = 'database-2.crbfgwhj5p1t.ap-south-1.rds.amazonaws.com'
-# user='admin'
-# password = 'Mydb1234'
+

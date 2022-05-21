@@ -2,7 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: cursive;
+    /* font-family: cursive; */
 }
 
 
@@ -307,7 +307,7 @@ input::-webkit-inner-spin-button {
 
  #navbar ul {
     display: flex;
-    font-family: 'Baloo Bhaijaan 2', cursive;
+    /* font-family: 'Baloo Bhaijaan 2', cursive; */
 
 }
 

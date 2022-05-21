@@ -20,25 +20,6 @@ const input = root.querySelector('input');
 const dropdown = root.querySelector('.dropdown');
 const resultWrapper = root.querySelector('.results');
 
-// async function fetchdata(search) {
-//         let response;
-//         if(search!=''){
-    
-//                 response = await axios.get('http://127.0.0.1:5000/',{
-//                 params:{
-//                     stock_name:search
-//                 }
-                
-//             })
-//             return response.data
-        
-//         }
-//         return {}
-//         // console.log(response.data)
-        
-//     }
-    
-
 
 const oninput = async event =>{
     const stocks=await fetchdata(event.target.value)

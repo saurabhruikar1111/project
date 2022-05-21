@@ -2,7 +2,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    font-family: cursive;
+    /* font-family: cursive; */
 }
 
 /* navigation bar  */
@@ -52,7 +52,7 @@
 
 #navbar ul {
     display: flex;
-    font-family: 'Baloo Bhaijaan 2', cursive;
+    /* font-family: 'Baloo Bhaijaan 2', cursive; */
 
 }
 
